@@ -8,25 +8,30 @@ def encode(num):
 
 print(encode(123))
 
-def decode(num):
+def decode(new_number):
     pass
 
-"""
-def main():
+def start():
     while True:
-        print("Menu")
-        print("-------------")
-        print("1. Encode")
-        print("2. Decode")
-        print("3. Quit")
-
-        option = int(input("Please enter an option: "))
-
-        if option == 1:
-            password = int(input("Please enter your password to encode: "))
-            encode(password)
-
+        menu()
+        option = int(input("\nPlease enter an option: "))
+        if option == "1":
+            num = int(input("Please enter your password to encode: "))
+            encode(num)
+            print("Your password has been encoded and stored!")
+        elif option == "2":
+            decoder(new_number)
+            print(f"The encoded password is {new_number}, and the original password is {num}.")
+        elif option == "3":
+            break
+def menu():
+    print("\nMenu")
+    print("-------------")
+    print("1. Encode")
+    print("2. Decode")
+    print("3. Quit")
+    return
 
 if __name__ == '__main__':
-    main()
-"""
+    start()
+
