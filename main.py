@@ -16,14 +16,14 @@ def start():
     while True:
         menu()
         option = int(input("\nPlease enter an option: "))
-        if option == "1":
+        if option == 1:
             num = int(input("Please enter your password to encode: "))
             encoded = encode(num)
             print("Your password has been encoded and stored!")
-        elif option == "2":
+        elif option == 2:
             original = decoder(encoded)
             print(f"The encoded password is {encoded}, and the original password is {original}.")
-        elif option == "3":
+        elif option == 3:
             break
 def menu():
     print("\nMenu")
@@ -34,6 +34,6 @@ def menu():
     return
 
 
+
 if __name__ == "__main__":
     start()
-
